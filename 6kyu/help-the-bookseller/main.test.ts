@@ -17,7 +17,7 @@ describe('stockList', () => {
 
     // Optional extra cases (each its own test)
     test('empty books yields zeroes for requested categories', () => {
-        const books = [];
+        const books: string[] = [];
         const categories = ['A', 'B'];
         expect(stockList(books, categories)).toBe('(A : 0) - (B : 0)');
     });
